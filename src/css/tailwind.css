@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .card {
+      @apply w-48 h-64 shadow-md rounded-lg;
+    }
+    .card > div:first-child {
+      @apply w-full h-3/5 rounded-t-lg bg-cover;
+    }
+    .card > div:nth-child(2) {
+      @apply w-full h-2/5 bg-secondary rounded-b-lg;
+    }
+    .card > div:nth-child(2) > p:first-child {
+      @apply text-white font-bold text-lg px-4 pt-2;
+    }
+    .card > div:nth-child(2) > p:nth-child(2) {
+      @apply text-white text-base px-4;
+    }
+  }
+   

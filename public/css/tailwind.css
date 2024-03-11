@@ -739,12 +739,60 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
+.card {
+  height: 16rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card > div:first-child {
+  height: 60%;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: cover;
+}
+
+.card > div:nth-child(2) {
+  height: 40%;
+  width: 100%;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.card > div:nth-child(2) > p:first-child {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: #FFFF;
+}
+
+.card > div:nth-child(2) > p:nth-child(2) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFFF;
+}
+
 .absolute {
   position: absolute;
 }
 
 .flex {
   display: flex;
+}
+
+.h-2\/5 {
+  height: 40%;
 }
 
 .h-3\/4 {
@@ -755,10 +803,6 @@ select {
   height: 60%;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -767,16 +811,8 @@ select {
   height: 100vh;
 }
 
-.h-2\/5 {
-  height: 40%;
-}
-
 .w-36 {
   width: 9rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-full {
@@ -809,10 +845,6 @@ select {
   border-radius: 9999px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -823,21 +855,29 @@ select {
   border-top-right-radius: 0.5rem;
 }
 
-.bg-white {
-  background-color: #FFFF;
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  background-color: #FFFF;
 }
 
 .bg-norway {
   background-image: url('../img/norway.jpg');
 }
 
+.bg-sanFrancisco {
+  background-image: url('../img/sanFrancisco.jpg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-20 {
@@ -852,18 +892,9 @@ select {
   padding: 1rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-base {
@@ -871,12 +902,17 @@ select {
   line-height: 1.5rem;
 }
 
-.font-semibold {
-  font-weight: 600;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-primary {
@@ -886,12 +922,6 @@ select {
 
 .text-white {
   color: #FFFF;
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-sm {
@@ -904,3 +934,4 @@ select {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+   
