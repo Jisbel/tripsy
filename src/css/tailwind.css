@@ -6,7 +6,7 @@
 
 @layer components {
     .card {
-      @apply w-48 h-64 shadow-md rounded-lg flex-none;
+      @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
     }
     .card > div:first-child {
       @apply w-full h-3/5 rounded-t-lg bg-cover;
