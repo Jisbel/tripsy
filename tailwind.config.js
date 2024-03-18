@@ -10,6 +10,8 @@ module.exports = {
       secondary: "#8FA206",
       tertiary: "#61AEC9",
       white: "#FFFF",
+      grayDark: "#6B7280",
+      grayLight: "#E5E7EB",
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],

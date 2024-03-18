@@ -6,6 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+ />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
@@ -15,7 +22,7 @@
   <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
       <div id="home">
           <div class="w-full h-3/4">
             <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
@@ -140,6 +147,48 @@
         </div>
     </div>
     </section>
-    <footer></footer>
+    <footer class="flex justify-around w-full h-auto bg-grayLight p-6 space-y-2">
+        <ul>
+        <h2 class="text-lg text-grayDark font-semibold">
+            About us
+        </h2>
+            <li class="text-sm text-grayDark pb-2">
+                Investors
+            </li>
+            <li class="text-sm text-grayDark pb-2">
+                Jobs
+            </li>
+            <li class="text-sm text-grayDark pb-2">
+                Terms and Conditions
+            </li>
+        </ul>
+        <ul>
+
+            <li class="text-sm text-grayDark pb-2">
+                Tripsy, Inc.
+            </li>
+            <li class="text-sm text-grayDark pb-2">
+                Follow Us
+                <ul class="text-xl text-grayDark flex space-x-2">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      
+    </footer>
   </body>
 </html>

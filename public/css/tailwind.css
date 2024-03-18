@@ -820,16 +820,12 @@ select {
   height: 24rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-48 {
@@ -856,14 +852,38 @@ select {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -904,6 +924,11 @@ select {
   border-top-right-radius: 0.5rem;
 }
 
+.bg-grayLight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(143 162 6 / var(--tw-bg-opacity));
@@ -913,8 +938,20 @@ select {
   background-color: #FFFF;
 }
 
+.bg-LA {
+  background-image: url('../img/LA.jpg');
+}
+
+.bg-bali {
+  background-image: url('../img/bali.jpg');
+}
+
 .bg-chicago {
   background-image: url('../img/chicago.jpg');
+}
+
+.bg-miami {
+  background-image: url('../img/miami.jpg');
 }
 
 .bg-new_york {
@@ -935,18 +972,6 @@ select {
 
 .bg-yosemite {
   background-image: url('../img/yosemite.jpg');
-}
-
-.bg-LA {
-  background-image: url('../img/LA.jpg');
-}
-
-.bg-miami {
-  background-image: url('../img/miami.jpg');
-}
-
-.bg-bali {
-  background-image: url('../img/bali.jpg');
 }
 
 .bg-cover {
@@ -991,6 +1016,14 @@ select {
   padding-top: 0.5rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -1024,12 +1057,17 @@ select {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
-.font-medium {
-  font-weight: 500;
+.text-grayDark {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-primary {
