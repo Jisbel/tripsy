@@ -11,6 +11,7 @@ module.exports = {
       tertiary: "#61AEC9",
       white: "#FFFF",
       grayDark: "#6B7280",
+      grayMedium: "#D1D5DB",
       grayLight: "#E5E7EB",
     },
     fontFamily: {
