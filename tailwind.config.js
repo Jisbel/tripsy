@@ -4,6 +4,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     colors: {
       primary: "#CC2D4A",
@@ -13,6 +14,9 @@ module.exports = {
       grayDark: "#6B7280",
       grayMedium: "#D1D5DB",
       grayLight: "#E5E7EB",
+      gray900: "#111827",
+      gray800: "#1F2937",
+      gray700: "#374151",
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
